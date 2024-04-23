@@ -1,3 +1,20 @@
-div{
+#masthead{
   background-color: var(--color-dark-3);
+
+  .tabs-controls{
+    padding-top: 120px;
+    .tabs-button{
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 20.8px;
+      transition: all .2s cubic-bezier(.165,.84,.44,1);
+      &:hover{
+        color: var(--color-blue-1);
+      }
+      svg{
+        margin-right: 10px;
+        width: 20px;
+      }
+    }
+  }
 }

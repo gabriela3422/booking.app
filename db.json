@@ -1,0 +1,28 @@
+{
+  "categories": [
+    {
+      "id": 0,
+      "name": "Hotel"
+    },
+    {
+      "id": 1,
+      "name": "Tour"
+    },
+    {
+      "id": 2,
+      "name": "Activity"
+    },
+    {
+      "id": 3,
+      "name": "Car"
+    },
+    {
+      "id": 4,
+      "name": "Cruise"
+    },
+    {
+      "id": 5,
+      "name": "Flights"
+    }
+  ]
+}
