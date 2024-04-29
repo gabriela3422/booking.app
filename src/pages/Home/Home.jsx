@@ -1,51 +1,47 @@
 import "./Home.scss";
-import axios, {options} from "axios";
-import {useEffect, useState} from "react";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
-import {faBed, faRoute, faCarSide, faPersonSnowboarding, faShip, faPlane} from "@fortawesome/free-solid-svg-icons";
+import Categories from "../../components/Includes/Categories/Categories";
+import SpecialTitle from "../../components/Heading/SpecialTitle";
 
 const Homepage = () => {
-    const [categories, setCategories] = useState([]);
-
-    useEffect(() => {
-        const fetchCategories = async () => {
-            try {
-                const response = await axios('http://localhost:8000/categories');
-                setCategories(response.data);
-            } catch (error) {
-                console.error(error);
-            }
-        };
-        fetchCategories();
-    }, []);
-
-    const categoryIcons = {
-        'Hotel': faBed,
-        'Tour': faRoute,
-        'Activity': faPersonSnowboarding,
-        'Car': faCarSide,
-        'Cruise': faShip,
-        "Flights": faPlane
-    };
-
-    const getCategoryIcon = (categoryName) => {
-        return categoryIcons[categoryName] || null;
-    };
-
-
     return (
         <>
             <section id="masthead">
                 <div className="container mx-auto">
                     <div className="masthead-tabs">
-                        <div className="tabs-controls d-flex items-center js-tabs-controls">
-                            {categories.map(category => (
-                            <button key={category.id}
-                                className="tabs-button px-7 py-5 rounded-4 fw-600 text-white js-tabs-button is-tab-el-active">
-                                <FontAwesomeIcon icon={getCategoryIcon(category.name)}/>
-                                {category.name}
-                            </button>
-                            ))}
+                        <div className="tabs-controls flex items-center js-tabs-controls">
+                            <Categories/>
+                        </div>
+                    </div>
+                    <div className="masthead-content">
+                        <div className="flex">
+                            <div className="w-2/5 aos-init aos-animate" data-aos="fade-up" data-aos-offset="0">
+                                <div className="masthead-content__description pt-20">
+                                    <SpecialTitle
+                                        colorWords="Where Would"
+                                        title=" You Like To Go?"
+                                        text="Checkout Beautiful Places Arround the World."
+                                    />
+                                </div>
+                                <div
+                                    className="mainSearch">
+                                </div>
+                            </div>
+                            <div className="w-3/5">
+                                <div className="masthead__images relative-1">
+                                    <div data-aos="fade" data-aos-delay="400" className="aos-init aos-animate">
+                                        <img src={require("../../assets/images/1.png")} className="js-mouse-move" alt="camping"/>
+                                    </div>
+                                    <div  className="aos-init aos-animate">
+                                        <img src={require("../../assets/images/2.png")}
+                                             data-aos="fade" data-aos-delay="600"
+                                             alt="mountain"  className="js-mouse-move"/>
+                                        <img src={require("../../assets/images/3.png")}
+                                             data-aos="fade" data-aos-delay="800"
+                                             alt="beach" className="js-mouse-move third"/>
+                                    </div>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
