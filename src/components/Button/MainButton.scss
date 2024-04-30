@@ -21,4 +21,13 @@
       color: var(--color-dark-1) ;
     }
   }
+  &.main-button-yellow{
+    background-color: var(--color-yellow-1);
+    color: var(--color-dark-1);
+    &:hover{
+      border-color: var(--color-dark-1);
+      background-color: var(--color-dark-1);
+      color: #fff;
+    }
+  }
 }

@@ -1,6 +1,6 @@
 import {createContext, useEffect, useState} from "react";
-import axios from "axios";
 import CategoryIcon from "./CategoriesIcon";
+import apiService from "../../../services/apiService";
 
 const CategoriesContext = createContext();
 const Categories = () => {
@@ -9,8 +9,8 @@ const Categories = () => {
     useEffect(() => {
         const fetchCategories = async () => {
             try {
-                const response = await axios('http://localhost:8000/categories');
-                setCategories(response.data);
+                const response = await apiService.get('/categories');
+                setCategories(response);
             } catch (error) {
                 console.error(error);
             }

@@ -9,6 +9,11 @@ header {
   height: 90px;
   transition: all .4s cubic-bezier(.165, .84, .44, 1);
   background-color: var(--color-dark-3);
+  &.isSticky{
+    background-color: var(--color-dark-1);
+    margin: 0;
+    box-shadow: #959da533 0 8px 24px;
+  }
   .header-wrapper {
     .header-wrapper__left {
       .header-hamburger {
