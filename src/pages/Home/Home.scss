@@ -53,6 +53,9 @@
       display: grid;
       grid-template-columns: auto auto;
       gap: 30px;
+      @media(min-width: 992px){
+        padding: 20px 15px;
+      }
 
 
       img {

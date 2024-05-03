@@ -23,11 +23,77 @@
     }
 
     .main-search__item{
-      border-right: 1px solid var(--color-border);
+        border-right: 1px solid var(--color-border);
+
       @media(max-width: 991px){
         border-right: unset;
         border-bottom: 1px solid var(--color-border);
+      }
+      &.search-menu__date{
+        .main-search__form{
+          position: relative;
+          input{
+            border: 0;
+            outline: none;
+            width: 100%;
+            padding: 0;
+            background-color: transparent;
+          }
+        }
+      }
+      &.search-menu__guests{
+        position: relative;
+        .search-guests__options{
+          position: absolute;
+          width: 100%;
+          top: 100%;
+          left: 0;
+          margin-top: 15px;
+          .guest-options__wrapper{
+            background-color: var(--color-white);
+            border-radius: 4px;
+            .search-guests__item {
+              &.childrens, &.adults{
+                border-bottom: 1px solid var(--color-border);
+                padding-bottom: 24px;
+              }
+              &.childrens, &.rooms{
+                padding-top: 24px;
+              }
 
+              .search-guests__text {
+                span {
+                  font-size: 15px;
+                  line-height: 18px;
+                  font-weight: 500;
+                }
+              }
+              .options {
+                .option-counter__button {
+                  border: 1px solid var(--color-blue-1);
+                  width: 38px;
+                  height: 38px;
+                  font-size: 15px;
+                  line-height: 1.2;
+                  color: var(--color-blue-1);
+                  border-radius: 4px;
+                  font-weight: 500;
+                  transition: all .3s cubic-bezier(.165, .84, .44, 1);
+                  display: inline-flex;
+                  align-items: center;
+                  justify-content: center;
+
+                  &:hover {
+                    background-color: var(--color-blue-1);
+                    border-color: transparent;
+                    color: #fff;
+                  }
+                }
+              }
+            }
+
+          }
+        }
       }
       h4{
         font-weight: 500;
@@ -49,6 +115,7 @@
         }
       }
       .search-guests__list{
+        color: var(--color-light-1);
         span{
           color: var(--color-light-1);
           line-height: 1.6;
