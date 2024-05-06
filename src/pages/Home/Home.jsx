@@ -2,6 +2,7 @@ import "./Home.scss";
 import Categories from "../../components/Includes/Categories/Categories";
 import SpecialTitle from "../../components/Heading/SpecialTitle";
 import MainSearch from "../../components/Search/MainSearch";
+import Benefits from "../../components/Includes/Benefits/Benefits";
 
 const Homepage = () => {
     return (
@@ -10,7 +11,7 @@ const Homepage = () => {
                 <div className="masthead__bg">
                     <img alt="banner" src={require("../../assets/images/bg.png")}
                          className="js-lazy"/>
-                    </div>
+                </div>
                 <div className="container mx-auto">
                     <div className="masthead-tabs">
                         <div className="tabs-controls flex items-center js-tabs-controls">
@@ -50,7 +51,16 @@ const Homepage = () => {
                     </div>
                 </div>
             </section>
+            <section id="benefits">
+                <div className="container mx-auto">
+                    <div className="benefits-list">
+                        {/*<Benefits*/}
+                        {/*className="w-1/3"*/}
+                        {/*/>*/}
+                    </div>
+                </div>
+            </section>
         </>
-)
+    )
 }
 export default Homepage

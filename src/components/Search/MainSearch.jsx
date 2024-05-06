@@ -1,7 +1,6 @@
 import "./MainSearch.scss"
 import MainButton from "../Button/MainButton";
 import {useState} from "react";
-import dateFormat from "dateformat";
 import DatePicker from "react-multi-date-picker";
 
 const MainSearch = () => {
@@ -42,7 +41,7 @@ const MainSearch = () => {
                         <h4>Check in - Check out</h4>
                         <div className="main-search__form">
                             {openDate && <DatePicker
-                                value={date[0] || date[1] ? date : new Date()}
+                                value={date[0] || date[1] ? date :  [new Date(), new Date(new Date().getTime() + 3 * 24 * 60 * 60 * 1000)]}
                                 numberOfMonths={2}
                                 format="MMM DD"
                                 range

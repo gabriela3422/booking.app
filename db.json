@@ -24,5 +24,23 @@
       "id": 5,
       "name": "Flights"
     }
+  ],
+  "benefits": [
+    {
+      "image": "../../assets/images/bg.png",
+      "name": "Best Price Guarantee",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "image": "../../assets/images/bg.png",
+      "name": "Easy & Quick Booking",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    },
+    {
+      "image": "../../assets/images/bg.png",
+      "name": "Customer Care 24/7",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+    }
+
   ]
 }

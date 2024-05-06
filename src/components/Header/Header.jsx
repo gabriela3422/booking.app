@@ -5,7 +5,7 @@ import {faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 import {useEffect, useState} from "react";
 import MainButton from "../Button/MainButton";
 
-const Header = () => {
+const Header = ({ toggleSidebar }) => {
     const [scrolling, setScrolling] = useState(false);
 
     useEffect(() => {
@@ -23,12 +23,14 @@ const Header = () => {
             window.removeEventListener('scroll', handleScroll);
         };
     }, []);
+
+
     return (
         <header className={`header ${scrolling ? 'isSticky' : ''}`}>
             <div className="header-container container mx-auto">
-                <div className="header-wrapper flex flex-row items-center justify-between">
-                    <div className="header-wrapper__left flex flex-row items-center">
-                        <div className="header-hamburger mr-5 flex flex-col">
+                <div className="header-wrapper  flex flex-row items-center justify-between">
+                    <div className="header-wrapper__left w-full flex flex-row-reverse lg:flex-row items-center">
+                        <div className="header-hamburger mr-5 flex flex-col" onClick={toggleSidebar}>
                             <span></span>
                             <span></span>
                         </div>
@@ -44,7 +46,7 @@ const Header = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="header-wrapper__right">
+                    <div className="header-wrapper__right hidden lg:block">
                         <div className="header-account">
                             <MainButton
                                 isWhite={true}

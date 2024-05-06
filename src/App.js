@@ -8,15 +8,25 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Header from "./components/Header/Header";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
+import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
     useEffect(() => {
         AOS.init();
     }, [])
+    const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+    const toggleSidebar = () => {
+        setIsSidebarOpen(!isSidebarOpen);
+    };
+    const closeSidebar = () => {
+        setIsSidebarOpen(false);
+    };
     return (
         <div className="App">
-            <Header/>
+            <Header toggleSidebar={toggleSidebar}/>
+            <Sidebar isSidebarOpen={isSidebarOpen} closeSidebar={closeSidebar}/>
             <BrowserRouter>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
