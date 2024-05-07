@@ -27,17 +27,20 @@
   ],
   "benefits": [
     {
-      "image": "../../assets/images/bg.png",
+      "id": 0,
+      "image": "1.svg",
       "name": "Best Price Guarantee",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-      "image": "../../assets/images/bg.png",
+      "id": 1,
+      "image": "2.svg",
       "name": "Easy & Quick Booking",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-      "image": "../../assets/images/bg.png",
+      "id": 2,
+      "image": "3.svg",
       "name": "Customer Care 24/7",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }

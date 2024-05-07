@@ -20,8 +20,8 @@ const Homepage = () => {
                     </div>
                     <div className="masthead-content">
                         <div className="flex xl:flex-row flex-col">
-                            <div className="w-full xl:w-2/5 py-5 aos-init aos-animate"
-                                 data-aos="fade-up" data-aos-offset="0">
+                            <div className="w-full xl:w-2/5 py-5"
+                                 data-aos="fade-up" data-aos-offset="0" data-aos-duration="1400">
                                 <div className="masthead-content__description pt-0 lg:pt-20 ">
                                     <SpecialTitle
                                         colorWords="Where Would"
@@ -33,11 +33,11 @@ const Homepage = () => {
                             </div>
                             <div className="w-full xl:w-3/5 py-5">
                                 <div className="masthead__images relative-1">
-                                    <div data-aos="fade" data-aos-delay="400" className="aos-init aos-animate">
+                                    <div data-aos="fade" data-aos-delay="400">
                                         <img src={require("../../assets/images/1.png")} className="js-mouse-move"
                                              alt="camping"/>
                                     </div>
-                                    <div className="aos-init aos-animate">
+                                    <div>
                                         <img src={require("../../assets/images/2.png")}
                                              data-aos="fade" data-aos-delay="600"
                                              alt="mountain" className="js-mouse-move"/>
@@ -51,12 +51,11 @@ const Homepage = () => {
                     </div>
                 </div>
             </section>
-            <section id="benefits">
+            <section id="benefits" className="layout-pt-lg layout-pb-md">
                 <div className="container mx-auto">
-                    <div className="benefits-list">
-                        {/*<Benefits*/}
-                        {/*className="w-1/3"*/}
-                        {/*/>*/}
+                    <div className="benefits-list flex items-center flex-wrap justify-center">
+                        <Benefits
+                        />
                     </div>
                 </div>
             </section>

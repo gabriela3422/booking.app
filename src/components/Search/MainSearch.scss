@@ -5,8 +5,6 @@
   position: absolute;
   z-index: 2;
   bottom: 30px;
-  width: 100%;
-  max-width: 900px;
   padding: 10px  10px 10px 0;
   @media(max-width: 991px){
     position: relative;
@@ -36,6 +34,7 @@
             border: 0;
             outline: none;
             width: 100%;
+            font-size: 14px;
             padding: 0;
             background-color: transparent;
           }
@@ -45,10 +44,12 @@
         position: relative;
         .search-guests__options{
           position: absolute;
+          z-index: 2;
           width: 100%;
           top: 100%;
           left: 0;
           margin-top: 15px;
+          box-shadow: 0 10px 35px #0510361a;
           .guest-options__wrapper{
             background-color: var(--color-white);
             border-radius: 4px;

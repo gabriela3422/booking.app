@@ -1,6 +1,7 @@
-import './App.css';
+import {useEffect, useState} from "react";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import './App.css';
 import {
     BrowserRouter,
     createBrowserRouter, Route,
@@ -8,7 +9,6 @@ import {
 } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import Header from "./components/Header/Header";
-import {useEffect, useState} from "react";
 import Sidebar from "./components/Sidebar/Sidebar";
 
 function App() {
