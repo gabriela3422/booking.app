@@ -67,26 +67,18 @@ body {
         padding-top: 60px;
     }
 }
-@media (max-width: 575px) {
-    .layout-pt-lg {
-        padding-top: 60px;
-    }
-}
+
 .layout-pb-md {
     padding-bottom: 60px;
 }
-@media (max-width: 767px) {
-    .layout-pb-md {
-        padding-bottom: 60px;
-    }
+.layout-pt-md{
+    padding-top: 60px;
 }
 @media (max-width: 575px) {
     .layout-pb-md {
         padding-bottom: 30px;
     }
-}
-@media (max-width: 575px) {
-    .layout-pb-md {
-        padding-bottom: 30px;
+    .layout-pt-md{
+        padding-top: 30px;
     }
 }

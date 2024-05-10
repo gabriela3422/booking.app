@@ -1,6 +1,6 @@
 import "./MainSearch.scss"
 import MainButton from "../Button/MainButton";
-import { useRef, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 import DatePicker from "react-multi-date-picker";
 
 const MainSearch = () => {
@@ -26,8 +26,12 @@ const MainSearch = () => {
         room: 1
     });
 
-    document.addEventListener('click', handleClickOutside);
-
+    useEffect(() => {
+        document.addEventListener('click', handleClickOutside);
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, []);
     const handleOption = (name, operation) =>{
         setOptions(prev=> {return{
             ...prev, [name]: operation === "i" ? options[name] + 1 : options[name] - 1
@@ -59,9 +63,9 @@ const MainSearch = () => {
                             />}
                         </div>
                     </div>
-                    <div className="main-search__item search-menu__guests py-5 lg:py-0 lg:px-7">
+                    <div className="main-search__item search-menu__guests py-5 lg:py-0 lg:px-7" ref={containerEl}>
                         <h4>Guest</h4>
-                        <div onClick={() => setOpenOptions(!openOptions)}   ref={containerEl} className="search-guests__list">
+                        <div onClick={() => setOpenOptions(!openOptions)}    className="search-guests__list">
                             <span className="js-count-adult">{options.adult}</span>
                             &nbsp;adults -&nbsp;
                             <span className="js-count-child">{options.children}</span>

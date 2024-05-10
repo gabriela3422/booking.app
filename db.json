@@ -45,5 +45,37 @@
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
 
+  ],
+  "countries": [
+    {
+      "id": 0,
+      "image": "country-1.png",
+      "name": "United Kingdom"
+    },
+    {
+      "id": 1,
+      "image": "country-2.png",
+      "name": "Italy"
+    },
+    {
+      "id": 2,
+      "image": "country-3.png",
+      "name": "France"
+    },
+    {
+      "id": 3,
+      "image": "country-4.png",
+      "name": "Turkey"
+    },
+    {
+      "id": 4,
+      "image": "country-5.png",
+      "name": "Spain"
+    },
+    {
+      "id": 5,
+      "image": "greece-country.jpg",
+      "name": "Greece"
+    }
   ]
 }

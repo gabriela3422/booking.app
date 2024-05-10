@@ -1,8 +1,10 @@
 import "./Home.scss";
 import Categories from "../../components/Includes/Categories/Categories";
-import SpecialTitle from "../../components/Heading/SpecialTitle";
 import MainSearch from "../../components/Search/MainSearch";
 import Benefits from "../../components/Includes/Benefits/Benefits";
+import SpecialTitle from "../../components/Heading/SpecialTitle/SpecialTitle";
+import MainHeading from "../../components/Heading/MainHeading/MainHeading";
+import DestinationGallery from "../../components/Gallery/DestinationGallery";
 
 const Homepage = () => {
     return (
@@ -15,7 +17,7 @@ const Homepage = () => {
                 <div className="container mx-auto">
                     <div className="masthead-tabs">
                         <div className="tabs-controls flex items-center js-tabs-controls">
-                            <Categories/>
+                            <Categories hasIcon={true}/>
                         </div>
                     </div>
                     <div className="masthead-content">
@@ -56,6 +58,33 @@ const Homepage = () => {
                     <div className="benefits-list flex items-center flex-wrap justify-center">
                         <Benefits
                         />
+                    </div>
+                </div>
+            </section>
+            <section id="popular-destinations" className="layout-pt-md layout-pb-md">
+                <div className="container mx-auto">
+                    <MainHeading
+                        title="Connect With Other Travellers"
+                        text="These popular destinations have a lot to offer"
+                    />
+                    <div className="js-section-slider pt-10">
+                        <DestinationGallery/>
+                    </div>
+                </div>
+            </section>
+            <section id="best-seller" className="layout-pt-md layout-pb-lg">
+                <div className="container mx-auto">
+                    <div className="flex items-center justify-between">
+                        <MainHeading
+                            title="Best Seller"
+                            text="Interdum et malesuada fames ac ante ipsum"
+                        />
+                        <div className="tabs-list flex items-center">
+                            <Categories hasIcon={false}/>
+                        </div>
+                    </div>
+                    <div className="best-seller__list pt-5 sm:pt-10">
+
                     </div>
                 </div>
             </section>

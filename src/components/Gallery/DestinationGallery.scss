@@ -1,0 +1,44 @@
+.country-item {
+  .country-item__wrapper {
+    @media(max-width: 535px) {
+      text-align: center;
+    }
+      .country-image {
+      position: relative;
+      overflow: hidden;
+      border-radius: 4px;
+
+      &:hover {
+        img {
+          transform: scale(1.15);
+        }
+      }
+
+      img {
+        transition: all .6s cubic-bezier(.165, .84, .44, 1);
+        max-height: 313px;
+        height: 100%;
+        object-fit: cover;
+        @media(max-width: 1200px){
+          max-height: 389px;
+        }
+        @media(max-width: 991px){
+          max-height: 449px;
+          min-height: 449px;
+        }
+        @media(max-width: 535px){
+          min-height: 513px;
+          max-height: 513px;
+        }
+      }
+    }
+
+    .country-description {
+      h4 {
+        font-weight: 500;
+        line-height: 23.4px;
+        font-size: 18px;
+      }
+    }
+  }
+}

@@ -72,7 +72,19 @@
     }
   }
 }
-
-  .layout-pt-lg{
+.layout-pt-lg{
     padding-top: 90px;
+}
+
+#best-seller{
+  .tabs-list{
+    .tabs-button{
+      color: var(--color-white);
+      background-color: var(--color-blue-1);
+      transition: all .2s cubic-bezier(.165,.84,.44,1);
+      border-radius: 4px;
+      padding: 10px 20px;
+      margin: 5px;
+    }
   }
+}

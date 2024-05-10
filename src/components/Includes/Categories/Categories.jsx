@@ -3,7 +3,7 @@ import CategoryIcon from "./CategoriesIcon";
 import apiService from "../../../services/apiService";
 
 const CategoriesContext = createContext();
-const Categories = () => {
+const Categories = ({ hasIcon }) => {
     const [categories, setCategories] = useState([]);
 
     useEffect(() => {
@@ -23,7 +23,7 @@ const Categories = () => {
             {categories.map(category => (
                 <button key={category.id}
                         className="tabs-button px-7 py-5 rounded-4 fw-600 text-white js-tabs-button is-tab-el-active">
-                    <CategoryIcon categoryName={category.name}/>
+                    {hasIcon &&  <CategoryIcon categoryName={category.name}/>}
                     {category.name}
                 </button>
             ))}
