@@ -5,6 +5,7 @@ import Benefits from "../../components/Includes/Benefits/Benefits";
 import SpecialTitle from "../../components/Heading/SpecialTitle/SpecialTitle";
 import MainHeading from "../../components/Heading/MainHeading/MainHeading";
 import DestinationGallery from "../../components/Gallery/DestinationGallery";
+import Hotels from "../../components/Hotels/BestSeller/Hotels";
 
 const Homepage = () => {
     return (
@@ -83,8 +84,8 @@ const Homepage = () => {
                             <Categories hasIcon={false}/>
                         </div>
                     </div>
-                    <div className="best-seller__list pt-5 sm:pt-10">
-
+                    <div className="best-seller__list pt-5 sm:pt-10 flex items-center flex-wrap justify-center">
+                      <Hotels/>
                     </div>
                 </div>
             </section>

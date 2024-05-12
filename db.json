@@ -44,7 +44,6 @@
       "name": "Customer Care 24/7",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     }
-
   ],
   "countries": [
     {
@@ -76,6 +75,104 @@
       "id": 5,
       "image": "greece-country.jpg",
       "name": "Greece"
+    }
+  ],
+  "hotels": [
+    {
+      "title": "The Montcalm At Brewery London City",
+      "id": 1,
+      "city": "London",
+      "address": "Westminster Borough, London",
+      "price": 99,
+      "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
+      "reviews": [],
+      "image": "montcalm-1.png",
+      "bestseller": true,
+      "breakfast": true
+    },
+    {
+      "title": "Staycity Aparthotels Deptford Bridge Station",
+      "id": 2,
+      "city": "Barcelona",
+      "address": "Ciutat Vella, Barcelona",
+      "price": 85,
+      "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
+      "reviews": [],
+      "image": "staycity-1.png",
+      "bestseller": false,
+      "breakfast": true
+    },
+    {
+      "title": "The Westin New York at Times Square West",
+      "id": 3,
+      "city": "New York",
+      "address": "Manhattan, New York",
+      "price": 89,
+      "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
+      "reviews": [],
+      "image": "westin-1.png",
+      "bestseller": true,
+      "breakfast": false
+    },
+    {
+      "title": "DoubleTree by Hilton Hotel Rome",
+      "id": 4,
+      "city": "Rome",
+      "address": "Vaticano Prati, Rome",
+      "price": 89,
+      "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
+      "reviews": [],
+      "image": "doubletree-1.png",
+      "bestseller": false,
+      "breakfast": true
+    },
+    {
+      "title": "The Westin New York at Times Square West Manhattan",
+      "id": 5,
+      "city": "New York",
+      "address": "Manhattan, New York",
+      "price": 68,
+      "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
+      "reviews": [],
+      "image": "westin-1.png",
+      "bestseller": false,
+      "breakfast": true
+    },
+    {
+      "title": "Cherry Blossoms Spring",
+      "id": 6,
+      "city": "Tokyo",
+      "address": "Somewhere in Japan",
+      "price": 89,
+      "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
+      "reviews": [],
+      "image": "cherry-1.jpeg",
+      "bestseller": true,
+      "breakfast": false
+    },
+    {
+      "title": "Holmen Lofoten, France",
+      "id": 7,
+      "city": "Paris",
+      "address": "Somewhere in France",
+      "price": 89,
+      "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
+      "reviews": [],
+      "image": "holmen-1.jpg",
+      "bestseller": true,
+      "breakfast": true
+    },
+    {
+      "title": "Snowy Mountains, Thailand",
+      "id": 8,
+      "city": "Bangkok",
+      "address": "Somewhere in Thailand",
+      "price": 75,
+      "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
+      "reviews": [],
+      "image": "snowy-1.jpg",
+      "bestseller": true,
+      "breakfast": true
     }
   ]
 }
