@@ -3,6 +3,10 @@
     line-height: 43.5px;
     font-weight: 600;
      font-size: 30px;
+    @media(max-width: 767px){
+      font-size: 26px;
+      line-height: 37.7px;
+    }
   }
   .main-heading__text{
     line-height: 30px;

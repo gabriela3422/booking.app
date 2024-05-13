@@ -25,7 +25,7 @@ const Homepage = () => {
                         <div className="flex xl:flex-row flex-col">
                             <div className="w-full xl:w-2/5 py-5"
                                  data-aos="fade-up" data-aos-offset="0" data-aos-duration="1400">
-                                <div className="masthead-content__description pt-0 lg:pt-20 ">
+                                <div className="masthead-content__description pt-0 xl:pt-20 ">
                                     <SpecialTitle
                                         colorWords="Where Would"
                                         title=" You Like To Go?"
@@ -36,7 +36,7 @@ const Homepage = () => {
                             </div>
                             <div className="w-full xl:w-3/5 py-5">
                                 <div className="masthead__images relative-1">
-                                    <div data-aos="fade" data-aos-delay="400">
+                                    <div className="large-img" data-aos="fade" data-aos-delay="400">
                                         <img src={require("../../assets/images/1.png")} className="js-mouse-move"
                                              alt="camping"/>
                                     </div>
@@ -75,16 +75,16 @@ const Homepage = () => {
             </section>
             <section id="best-seller" className="layout-pt-md layout-pb-lg">
                 <div className="container mx-auto">
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center flex-wrap justify-between">
                         <MainHeading
                             title="Best Seller"
                             text="Interdum et malesuada fames ac ante ipsum"
                         />
-                        <div className="tabs-list flex items-center">
+                        <div className="tabs-list flex flex-wrap items-center">
                             <Categories hasIcon={false}/>
                         </div>
                     </div>
-                    <div className="best-seller__list pt-5 sm:pt-10 flex items-center flex-wrap justify-center">
+                    <div className="best-seller__list pt-5 sm:pt-5 flex items-center flex-wrap ">
                       <Hotels/>
                     </div>
                 </div>

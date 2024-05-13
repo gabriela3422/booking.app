@@ -57,14 +57,23 @@ body {
 .layout-pt-lg {
     padding-top: 120px;
 }
+.layout-pb-lg {
+    padding-bottom: 120px;
+}
 @media (max-width: 767px) {
     .layout-pt-lg {
         padding-top: 100px;
+    }
+    .layout-pb-lg {
+        padding-bottom: 120px;
     }
 }
 @media (max-width: 575px) {
     .layout-pt-lg {
         padding-top: 60px;
+    }
+    .layout-pb-lg {
+        padding-bottom: 60px;
     }
 }
 

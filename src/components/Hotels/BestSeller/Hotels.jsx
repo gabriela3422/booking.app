@@ -1,6 +1,7 @@
 import {createContext, useEffect, useState} from "react";
 import apiService from "../../../services/apiService";
 import {Link} from "react-router-dom";
+import "./Hotel.scss"
 
 const HotelsContext = createContext();
 const Hotels = () => {
@@ -11,6 +12,7 @@ const Hotels = () => {
             try {
                 const response = await apiService.get(`/hotels`);
                 setHotels(response);
+                console.log(response);
             } catch (error) {
                 console.error(error);
             }
@@ -20,23 +22,36 @@ const Hotels = () => {
     return (
         <>
             <HotelsContext.Provider value={{hotels, setHotels}}>
-                {hotels.map(hotel => (
-                    <div className="best-seller__hotel w-1/4" key={hotel.id}>
-                        <Link key={hotel.id} to={`/hotels/${hotel.id}`}>
+                {hotels.map((hotel, index) => (
+                    <Link key={hotel.id} to={`/hotels/${hotel.id}/`} className="w-full sm:w-1/2 lg:w-1/4 sm:py-3.5 sm:px-3.5" data-aos="fade"
+                          data-aos-delay={index * 100}>
+                        <div className="best-seller__hotel" key={hotel.id}>
                             <div className="hotel-image">
                                 <img src={require(`../../../assets/images/hotels/${hotel.image}`)} alt={hotel.title}/>
+                                <div className="hotel-badge">
+                                    {hotel.breakfast ?
+                                        <span className="breakfast">Breakfast Included</span>
+                                        : null}
+                                    {hotel.bestseller ?
+                                        <span className="bestseller">Best seller</span>
+                                        : null}
+                                </div>
                             </div>
-                        </Link>
-                        <div className="hotel-content">
-                            <div className="hotel-description">
-                                <h4>{hotel.title}</h4>
-                                <p>{hotel.address}</p>
-                            </div>
-                            <div className="hotel-price">
-                                <p>Starting from <span>{hotel.price}</span></p>
+                            <div className="hotel-content mt-2.5">
+                                <div className="hotel-description">
+                                    <h4>{hotel.title}</h4>
+                                    <p className="mt-1.5">{hotel.address}</p>
+                                </div>
+                                <div className="hotel-rating mt-5 flex items-center">
+                                    <span>4.7</span>
+                                    <p className="ms-2.5">Exceptional</p>
+                                </div>
+                                <div className="hotel-price mt-1.5">
+                                    <p>Starting from <span>US${hotel.price}</span></p>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    </Link>
                 ))}
             </HotelsContext.Provider>
         </>
