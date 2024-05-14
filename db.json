@@ -174,5 +174,57 @@
       "bestseller": true,
       "breakfast": true
     }
+  ],
+  "testimonials": [
+    {
+      "id": 1,
+      "image": "person-1.png",
+      "name": "Annette Black",
+      "occupation": "UX / UI Designer",
+      "location": "Hotel Equatorial Melaka",
+      "description": "Our family was traveling via bullet train between cities in  Japan with our luggage - the location for this hotel made that so   easy. Agoda price was fantastic."
+    },
+    {
+      "id": 1,
+      "image": "person-2.png",
+      "name": "Annette Black",
+      "occupation": "UX / UI Designer",
+      "location": "Hotel Equatorial Melaka",
+      "description": "Our family was traveling via bullet train between cities in  Japan with our luggage - the location for this hotel made that so   easy. Agoda price was fantastic."
+    },
+    {
+      "id": 1,
+      "image": "person-3.png",
+      "name": "Annette Black",
+      "occupation": "UX / UI Designer",
+      "location": "Hotel Equatorial Melaka",
+      "description": "Our family was traveling via bullet train between cities in  Japan with our luggage - the location for this hotel made that so   easy. Agoda price was fantastic."
+    }
+  ],
+  "partners": [
+    {
+      "id": 1,
+      "image": "parteners-1.svg"
+    },
+    {
+      "id": 2,
+      "image": "parteners-2.svg"
+    },
+    {
+      "id": 3,
+      "image": "parteners-3.svg"
+    },
+    {
+      "id": 4,
+      "image": "parteners-4.svg"
+    },
+    {
+      "id": 5,
+      "image": "parteners-5.svg"
+    },
+    {
+      "id": 6,
+      "image": "parteners-6.svg"
+    }
   ]
 }

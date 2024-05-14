@@ -1,11 +1,12 @@
 import {Swiper, SwiperSlide} from 'swiper/react';
 import {useEffect, useState} from "react";
-import apiService from "../../services/apiService";
+import "./DestinationGallery.scss"
+import apiService from "../../../services/apiService";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import "./DestinationGallery.scss"
+
 
 
 const DestinationGallery = () => {
@@ -49,7 +50,7 @@ const DestinationGallery = () => {
                         <div className="country-item" data-aos="fade" data-aos-delay={index * 100}>
                             <div className="country-item__wrapper">
                                 <div className="country-image inline-block">
-                                    <img src={require(`../../assets/images/${country.image}`)} alt={country.name}/>
+                                    <img src={require(`../../../assets/images/${country.image}`)} alt={country.name}/>
                                 </div>
                                 <div className="country-description">
                                     <h4>{country.name}</h4>

@@ -4,8 +4,10 @@ import MainSearch from "../../components/Search/MainSearch";
 import Benefits from "../../components/Includes/Benefits/Benefits";
 import SpecialTitle from "../../components/Heading/SpecialTitle/SpecialTitle";
 import MainHeading from "../../components/Heading/MainHeading/MainHeading";
-import DestinationGallery from "../../components/Gallery/DestinationGallery";
 import Hotels from "../../components/Hotels/BestSeller/Hotels";
+import DestinationGallery from "../../components/Gallery/DestinationGallery/DestinationGallery";
+import TestimonialsGallery from "../../components/Gallery/TestimonialsGallery/TestimonialsGallery";
+import Partners from "../../components/Includes/Partners/Partners";
 
 const Homepage = () => {
     return (
@@ -85,7 +87,41 @@ const Homepage = () => {
                         </div>
                     </div>
                     <div className="best-seller__list pt-5 sm:pt-5 flex items-center flex-wrap ">
-                      <Hotels/>
+                        <Hotels/>
+                    </div>
+                </div>
+            </section>
+            <section id="testimonials" className="layout-pt-lg layout-pb-md ">
+                <div className="container mx-auto">
+                    <div className="flex flex-wrap justify-evenly">
+                        <div className="w-full lg:w-2/5 pb-7 lg:pb-0">
+                            <MainHeading
+                                title="What our customers are  saying us?"
+                                text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas varius tortor nibh, sit amet tempor nibh finibus et. Aenean eu enim justo."
+                            />
+                            <div className="testimonials-clients flex pt-14">
+                                <div className="w-1/2">
+                                    <span className="testimonials-numbers">13m+</span>
+                                    <p>Happy People</p>
+                                </div>
+                                <div className="w-1/2">
+                                    <div className="testimonials-numbers">4.88</div>
+                                    <p>Overall rating</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="w-full lg:w-2/5 pt-7 lg:pt-0">
+                            <TestimonialsGallery/>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="parteners" className="layout-pt-lg layout-pb-md">
+                <div className="container mx-auto">
+                    <p className="text-center">Trusted by the world’s best</p>
+                    <div
+                        className="parteners-wrapper pt-7 lg:pt-14 flex-wrap flex items-center justify-center md:justify-between ">
+                        <Partners/>
                     </div>
                 </div>
             </section>

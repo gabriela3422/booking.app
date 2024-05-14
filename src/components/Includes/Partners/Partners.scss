@@ -1,0 +1,10 @@
+#parteners {
+  .partener-image {
+    @media(max-width: 768px) {
+      width: calc(100% / 2);
+      img {
+        margin: auto;
+      }
+    }
+  }
+}
