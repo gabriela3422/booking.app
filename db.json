@@ -1,45 +1,45 @@
 {
   "categories": [
     {
-      "id": 0,
+      "id": 1,
       "name": "Hotel"
     },
     {
-      "id": 1,
+      "id": 2,
       "name": "Tour"
     },
     {
-      "id": 2,
+      "id": 3,
       "name": "Activity"
     },
     {
-      "id": 3,
+      "id": 4,
       "name": "Car"
     },
     {
-      "id": 4,
+      "id": 5,
       "name": "Cruise"
     },
     {
-      "id": 5,
+      "id": 6,
       "name": "Flights"
     }
   ],
   "benefits": [
     {
-      "id": 0,
+      "id": 1,
       "image": "1.svg",
       "name": "Best Price Guarantee",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-      "id": 1,
+      "id": 2,
       "image": "2.svg",
       "name": "Easy & Quick Booking",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
     },
     {
-      "id": 2,
+      "id": 3,
       "image": "3.svg",
       "name": "Customer Care 24/7",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
@@ -47,32 +47,32 @@
   ],
   "countries": [
     {
-      "id": 0,
+      "id": 1,
       "image": "country-1.png",
       "name": "United Kingdom"
     },
     {
-      "id": 1,
+      "id": 2,
       "image": "country-2.png",
       "name": "Italy"
     },
     {
-      "id": 2,
+      "id": 3,
       "image": "country-3.png",
       "name": "France"
     },
     {
-      "id": 3,
+      "id": 4,
       "image": "country-4.png",
       "name": "Turkey"
     },
     {
-      "id": 4,
+      "id": 5,
       "image": "country-5.png",
       "name": "Spain"
     },
     {
-      "id": 5,
+      "id": 6,
       "image": "greece-country.jpg",
       "name": "Greece"
     }
