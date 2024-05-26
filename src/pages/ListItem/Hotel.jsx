@@ -1,27 +1,10 @@
-import {useEffect, useState} from "react";
-import apiService from "../../services/apiService";
-import {useParams} from "react-router";
-
+import {useBooking} from "../../context/BookingContext";
 
 const Hotel = () => {
-    const [hotel, setHotel] = useState(null);
-    const {id} = useParams();
-    useEffect(() => {
-        const fetchHotel = async () => {
-            try {
-                const response = await apiService.get(`/hotels/${id}`);
-                setHotel(response);
-            } catch (error) {
-                console.error(error);
-            }
-        };
+    const {hotel, hotelsLoading, hotelsError} = useBooking();
+    if (hotelsLoading) return <div>Loading...</div>;
+    if (hotelsError) return <div>Error: {hotelsError.message}</div>;
 
-        fetchHotel();
-    }, [id]);
-
-    if (!hotel) {
-        return <div>Loading...</div>;
-    }
     return (
         <>
             <section className="hotel-page pt-10">

@@ -1,42 +1,30 @@
 import "./MainSearch.scss"
 import MainButton from "../Button/MainButton";
-import {useEffect, useRef, useState} from "react";
+import {useRef, useState} from "react";
 import DatePicker from "react-multi-date-picker";
+import useClickOutside from "../../hooks/useClickOutside";
+import useOptions from "../../hooks/useOptions";
+import useDate from "../../hooks/useDate";
+import useInputState from "../../hooks/useInputState";
 
 const MainSearch = () => {
     const containerEl = useRef(null);
     const [openDate, setOpenDate] = useState(true);
-    const [date, setDate] = useState({
+    const [date, handleValueChange] = useDate({
         startDate: new Date(),
         endDate: new Date(),
     });
-    const handleValueChange = (newDate) => {
-        setDate(newDate);
-    }
-    const handleClickOutside = (event) => {
-        if (containerEl.current && !containerEl.current.contains(event.target)) {
-            setOpenOptions(false);
-        }
-    };
     const [openOptions, setOpenOptions] = useState(false);
-
-    const [options, setOptions] = useState({
+    const [options, handleOption] = useOptions({
         adult: 2,
         children: 2,
-        room: 1
+        room: 1,
     });
 
-    useEffect(() => {
-        document.addEventListener('click', handleClickOutside);
-        return () => {
-            document.removeEventListener('click', handleClickOutside);
-        };
-    }, []);
-    const handleOption = (name, operation) =>{
-        setOptions(prev=> {return{
-            ...prev, [name]: operation === "i" ? options[name] + 1 : options[name] - 1
-        }})
-    }
+    const [location, handleLocationChange] = useInputState('');
+
+    useClickOutside(containerEl, () => setOpenOptions(false));
+
     return (
         <>
             <div className="main-search py-2.5">
@@ -44,15 +32,18 @@ const MainSearch = () => {
                     <div className="main-search__item search-menu__location py-5 lg:py-0 lg:px-7">
                         <h4>Location</h4>
                         <div className="main-search__form">
-                            <input autoComplete="off" type="search" placeholder="Where are you go?"
-                                   className="js-search js-dd-focus" value=""/>
+                            <input value={location}
+                                   onChange={handleLocationChange}
+                                   autoComplete="off" type="search"
+                                   placeholder="Where are you go?"
+                                   className="js-search js-dd-focus"/>
                         </div>
                     </div>
                     <div className="main-search__item search-menu__date py-5 lg:py-0 lg:px-7">
                         <h4>Check in - Check out</h4>
                         <div className="main-search__form">
                             {openDate && <DatePicker
-                                value={date[0] || date[1] ? date :  [new Date(), new Date(new Date().getTime() + 3 * 24 * 60 * 60 * 1000)]}
+                                value={date[0] || date[1] ? date : [new Date(), new Date(new Date().getTime() + 3 * 24 * 60 * 60 * 1000)]}
                                 numberOfMonths={2}
                                 format="MMM DD"
                                 range
@@ -65,7 +56,7 @@ const MainSearch = () => {
                     </div>
                     <div className="main-search__item search-menu__guests py-5 lg:py-0 lg:px-7" ref={containerEl}>
                         <h4>Guest</h4>
-                        <div onClick={() => setOpenOptions(!openOptions)}    className="search-guests__list">
+                        <div onClick={() => setOpenOptions(!openOptions)} className="search-guests__list">
                             <span className="js-count-adult">{options.adult}</span>
                             &nbsp;adults -&nbsp;
                             <span className="js-count-child">{options.children}</span>
@@ -87,7 +78,9 @@ const MainSearch = () => {
                                             -
                                         </button>
                                         <span className="options-counter__number px-4">{options.adult}</span>
-                                        <button onClick={() => handleOption('adult', 'i')} className="option-counter__button">+</button>
+                                        <button onClick={() => handleOption('adult', 'i')}
+                                                className="option-counter__button">+
+                                        </button>
                                     </div>
                                 </div>
                                 <div className="search-guests__item childrens flex items-center justify-between">
@@ -103,7 +96,9 @@ const MainSearch = () => {
                                             -
                                         </button>
                                         <span className="options-counter__number px-4">{options.children}</span>
-                                        <button onClick={() => handleOption('children', 'i')} className="option-counter__button">+</button>
+                                        <button onClick={() => handleOption('children', 'i')}
+                                                className="option-counter__button">+
+                                        </button>
                                     </div>
                                 </div>
                                 <div className="search-guests__item rooms flex items-center justify-between">
@@ -118,7 +113,9 @@ const MainSearch = () => {
                                             -
                                         </button>
                                         <span className="options-counter__number px-4">{options.room}</span>
-                                        <button onClick={() => handleOption('room', 'i')}className="option-counter__button">+</button>
+                                        <button onClick={() => handleOption('room', 'i')}
+                                                className="option-counter__button">+
+                                        </button>
                                     </div>
                                 </div>
                             </div>
