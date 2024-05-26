@@ -1,5 +1,5 @@
 import {Swiper, SwiperSlide} from 'swiper/react';
-import {useEffect, useState} from "react";
+import useFetch from "../../../hooks/useFetch";
 import "./DestinationGallery.scss"
 import apiService from "../../../services/apiService";
 // Import Swiper styles
@@ -8,21 +8,11 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 
-
 const DestinationGallery = () => {
-    const [countries, setCountry] = useState([]);
+    const {data: countries, loading, error} = useFetch(apiService.getCountries);
+    if (loading) return <div>Loading...</div>;
+    if (error) return <div>Error: {error.message}</div>;
 
-    useEffect(() => {
-        const fetchCountries = async () => {
-            try {
-                const response = await apiService.get('/countries');
-                setCountry(response);
-            } catch (error) {
-                console.error(error);
-            }
-        };
-        fetchCountries();
-    }, []);
     return (
         <>
             <Swiper
@@ -31,11 +21,11 @@ const DestinationGallery = () => {
                 breakpoints={{
                     320: {
                         slidesPerView: 1,
-                        spaceBetween:22
+                        spaceBetween: 22
                     },
                     535: {
                         slidesPerView: 2,
-                        spaceBetween:22
+                        spaceBetween: 22
                     },
                     991: {
                         slidesPerView: 3,

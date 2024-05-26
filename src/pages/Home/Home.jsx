@@ -8,6 +8,7 @@ import Hotels from "../../components/Hotels/BestSeller/Hotels";
 import DestinationGallery from "../../components/Gallery/DestinationGallery/DestinationGallery";
 import TestimonialsGallery from "../../components/Gallery/TestimonialsGallery/TestimonialsGallery";
 import Partners from "../../components/Includes/Partners/Partners";
+import {BookingProvider} from "../../context/BookingContext";
 
 const Homepage = () => {
     return (
@@ -87,7 +88,9 @@ const Homepage = () => {
                         </div>
                     </div>
                     <div className="best-seller__list pt-5 sm:pt-5 flex items-center flex-wrap ">
-                        <Hotels/>
+                        <BookingProvider>
+                            <Hotels />
+                        </BookingProvider>
                     </div>
                 </div>
             </section>

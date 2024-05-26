@@ -1,5 +1,6 @@
+import apiService from "../../../services/apiService";
+import useFetch from "../../../hooks/useFetch";
 import "./TestimonialsGallery.scss"
-import React, {useEffect, useState} from 'react';
 // Import Swiper React components
 import {Swiper, SwiperSlide} from 'swiper/react';
 // Import Swiper styles
@@ -7,22 +8,12 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import {EffectCards, Navigation, Pagination} from 'swiper/modules';
-import apiService from "../../../services/apiService";
+
 
 const TestimonialsGallery = () => {
-    const [testimonials, setTestimonials] = useState([]);
-
-    useEffect(() => {
-        const fetchTestimonials = async () => {
-            try {
-                const response = await apiService.get('/testimonials');
-                setTestimonials(response);
-            } catch (error) {
-                console.error(error);
-            }
-        };
-        fetchTestimonials();
-    }, []);
+    const {data: testimonials, loading, error} = useFetch(apiService.getTestimonials);
+    if (loading) return <div>Loading...</div>;
+    if (error) return <div>Error: {error.message}</div>;
     return (
         <>
             <Swiper

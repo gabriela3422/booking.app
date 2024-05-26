@@ -1,21 +1,12 @@
 import "./Partners.scss"
-import {useEffect, useState} from "react";
 import apiService from "../../../services/apiService";
+import useFetch from "../../../hooks/useFetch";
 
 const Partners = () => {
-    const [partners, setPartners] = useState([]);
+    const {data: partners, loading, error} = useFetch(apiService.getPartners);
+    if (loading) return <div>Loading...</div>;
+    if (error) return <div>Error: {error.message}</div>;
 
-    useEffect(() => {
-        const fetchParteners = async () => {
-            try {
-                const response = await apiService.get('/partners');
-                setPartners(response);
-            } catch (error) {
-                console.error(error);
-            }
-        };
-        fetchParteners();
-    }, []);
     return (
         <>
             {partners.map(partner => (
