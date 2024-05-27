@@ -125,6 +125,7 @@ const MainSearch = () => {
                         <MainButton
                             isWhite={false}
                             text="Search"
+                            link="/hotels"
                         />
                     </div>
                 </div>

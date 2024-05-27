@@ -86,6 +86,22 @@
       "price": 99,
       "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
       "reviews": [],
+      "rooms": [
+        {
+          "name": "Standard Twin Room",
+          "availableBeds": "2 extra-large double bed"
+        },
+        {
+          "name": "King Room",
+          "availableBeds": "1 extra-large double bed"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Spa",
+        "WiFi",
+        "Bar"
+      ],
       "image": "montcalm-1.png",
       "bestseller": true,
       "breakfast": true
@@ -98,6 +114,22 @@
       "price": 85,
       "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
       "reviews": [],
+      "rooms": [
+        {
+          "name": "Standard Twin Room",
+          "availableBeds": "2 extra-large double bed"
+        },
+        {
+          "name": "King Room",
+          "availableBeds": "1 extra-large double bed"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Spa",
+        "WiFi",
+        "Bar"
+      ],
       "image": "staycity-1.png",
       "bestseller": false,
       "breakfast": true
@@ -110,6 +142,22 @@
       "price": 89,
       "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
       "reviews": [],
+      "rooms": [
+        {
+          "name": "Standard Twin Room",
+          "availableBeds": "2 extra-large double bed"
+        },
+        {
+          "name": "King Room",
+          "availableBeds": "1 extra-large double bed"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Spa",
+        "WiFi",
+        "Bar"
+      ],
       "image": "westin-1.png",
       "bestseller": true,
       "breakfast": false
@@ -122,6 +170,22 @@
       "price": 89,
       "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
       "reviews": [],
+      "rooms": [
+        {
+          "name": "Standard Twin Room",
+          "availableBeds": "2 extra-large double bed"
+        },
+        {
+          "name": "King Room",
+          "availableBeds": "1 extra-large double bed"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Spa",
+        "WiFi",
+        "Bar"
+      ],
       "image": "doubletree-1.png",
       "bestseller": false,
       "breakfast": true
@@ -134,6 +198,22 @@
       "price": 68,
       "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
       "reviews": [],
+      "rooms": [
+        {
+          "name": "Standard Twin Room",
+          "availableBeds": "2 extra-large double bed"
+        },
+        {
+          "name": "King Room",
+          "availableBeds": "1 extra-large double bed"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Spa",
+        "WiFi",
+        "Bar"
+      ],
       "image": "westin-1.png",
       "bestseller": false,
       "breakfast": true
@@ -146,6 +226,22 @@
       "price": 89,
       "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
       "reviews": [],
+      "rooms": [
+        {
+          "name": "Standard Twin Room",
+          "availableBeds": "2 extra-large double bed"
+        },
+        {
+          "name": "King Room",
+          "availableBeds": "1 extra-large double bed"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Spa",
+        "WiFi",
+        "Bar"
+      ],
       "image": "cherry-1.jpeg",
       "bestseller": true,
       "breakfast": false
@@ -158,6 +254,22 @@
       "price": 89,
       "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
       "reviews": [],
+      "rooms": [
+        {
+          "name": "Standard Twin Room",
+          "availableBeds": "2 extra-large double bed"
+        },
+        {
+          "name": "King Room",
+          "availableBeds": "1 extra-large double bed"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Spa",
+        "WiFi",
+        "Bar"
+      ],
       "image": "holmen-1.jpg",
       "bestseller": true,
       "breakfast": true
@@ -170,6 +282,22 @@
       "price": 75,
       "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
       "reviews": [],
+      "rooms": [
+        {
+          "name": "Standard Twin Room",
+          "availableBeds": "2 extra-large double bed"
+        },
+        {
+          "name": "King Room",
+          "availableBeds": "1 extra-large double bed"
+        }
+      ],
+      "amenities": [
+        "Breakfast",
+        "Spa",
+        "WiFi",
+        "Bar"
+      ],
       "image": "snowy-1.jpg",
       "bestseller": true,
       "breakfast": true

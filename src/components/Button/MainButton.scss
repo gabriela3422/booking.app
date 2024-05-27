@@ -1,4 +1,4 @@
-.main-button{
+.main-button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -9,25 +9,39 @@
   height: 50px;
   width: 100%;
   border-radius: 4px;
-  transition: all .3s cubic-bezier(.165,.84,.44,1);
+  transition: all .3s cubic-bezier(.165, .84, .44, 1);
   padding-left: 30px;
   padding-right: 30px;
+
   &.main-button-transparent {
-     border:1px solid var(--color-white);
+    border: 1px solid var(--color-white);
     background-color: transparent;
     color: var(--color-white);
-    &:hover{
-      background-color: var(--color-white) ;
-      color: var(--color-dark-1) ;
+
+    &:hover {
+      background-color: var(--color-white);
+      color: var(--color-dark-1);
     }
   }
-  &.main-button-yellow{
+
+  &.main-button-yellow {
     background-color: var(--color-yellow-1);
     color: var(--color-dark-1);
+
+    &:hover {
+      border-color: var(--color-dark-1);
+      background-color: var(--color-dark-1);
+      color: var(--color-white);
+    }
+  }
+
+  &.main-button-blue {
+    background-color: var(--color-blue-1);
+    color: var(--color-white);
     &:hover{
       border-color: var(--color-dark-1);
       background-color: var(--color-dark-1);
-      color: #fff;
+      color: var(--color-white);
     }
   }
 }
