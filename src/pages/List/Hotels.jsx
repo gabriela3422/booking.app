@@ -1,6 +1,5 @@
 import './Hotels.scss'
 import HotelList from "../../components/Hotels/List/HotelList";
-import {BookingProvider} from "../../context/BookingContext";
 
 const Hotels = () => {
     return (
@@ -11,9 +10,7 @@ const Hotels = () => {
                         <div className="w-1/4">
                         </div>
                         <div className="w-5/6">
-                            <BookingProvider>
-                                <HotelList/>
-                            </BookingProvider>
+                            <HotelList/>
                         </div>
                     </div>
                 </div>

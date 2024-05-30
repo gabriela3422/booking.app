@@ -18,7 +18,7 @@ const useFetch = (fetchFunction, params = null) => {
         };
 
         fetchData();
-    }, [fetchFunction, params]);
+    },  [fetchFunction, params]);
 
     return { data, loading, error };
 };

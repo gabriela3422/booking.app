@@ -4,15 +4,17 @@ import {getHotelById, getHotels} from "../services/apiService";
 
 const BookingContext = createContext();
 
-export const BookingProvider = ({ children, hotelIdFromParams }) => {
-    const [hotelId, setHotelId] = useState(hotelIdFromParams);
-    const { data: hotels, loading: hotelsLoading, error: hotelsError } = useFetch(getHotels);
-    const { data: hotel, loading: hotelLoading, error: hotelError } = useFetch(getHotelById, hotelId);
+export const BookingProvider = ({children, params }) => {
+    const [hotelId, setHotelId] = useState(params.id || null);
+    const {data: hotels, loading: hotelsLoading, error: hotelsError} = useFetch(getHotels);
+    const {data: hotel, loading: hotelLoading, error: hotelError} = useFetch(getHotelById, [hotelId]);
+
     useEffect(() => {
-        if (hotelIdFromParams) {
-            setHotelId(hotelIdFromParams);
+        if (params.id) {
+            setHotelId(params.id);
         }
-    }, [hotelIdFromParams]);
+    }, [params.id]);
+
     return (
         <BookingContext.Provider value={{
             hotels, hotelsLoading, hotelsError,

@@ -102,6 +102,13 @@
         "WiFi",
         "Bar"
       ],
+      "gallery": [
+        "hotel-1.png",
+        "hotel-2.png",
+        "hotel-3.png",
+        "hotel-4.png",
+        "hotel-5.png"
+      ],
       "image": "montcalm-1.png",
       "bestseller": true,
       "breakfast": true
@@ -129,6 +136,13 @@
         "Spa",
         "WiFi",
         "Bar"
+      ],
+      "gallery": [
+        "hotel-1.png",
+        "hotel-2.png",
+        "hotel-3.png",
+        "hotel-4.png",
+        "hotel-5.png"
       ],
       "image": "staycity-1.png",
       "bestseller": false,
@@ -158,6 +172,13 @@
         "WiFi",
         "Bar"
       ],
+      "gallery": [
+        "hotel-1.png",
+        "hotel-2.png",
+        "hotel-3.png",
+        "hotel-4.png",
+        "hotel-5.png"
+      ],
       "image": "westin-1.png",
       "bestseller": true,
       "breakfast": false
@@ -185,6 +206,13 @@
         "Spa",
         "WiFi",
         "Bar"
+      ],
+      "gallery": [
+        "hotel-1.png",
+        "hotel-2.png",
+        "hotel-3.png",
+        "hotel-4.png",
+        "hotel-5.png"
       ],
       "image": "doubletree-1.png",
       "bestseller": false,
@@ -214,6 +242,13 @@
         "WiFi",
         "Bar"
       ],
+      "gallery": [
+        "hotel-1.png",
+        "hotel-2.png",
+        "hotel-3.png",
+        "hotel-4.png",
+        "hotel-5.png"
+      ],
       "image": "westin-1.png",
       "bestseller": false,
       "breakfast": true
@@ -241,6 +276,13 @@
         "Spa",
         "WiFi",
         "Bar"
+      ],
+      "gallery": [
+        "hotel-1.png",
+        "hotel-2.png",
+        "hotel-3.png",
+        "hotel-4.png",
+        "hotel-5.png"
       ],
       "image": "cherry-1.jpeg",
       "bestseller": true,
@@ -270,6 +312,13 @@
         "WiFi",
         "Bar"
       ],
+      "gallery": [
+        "hotel-1.png",
+        "hotel-2.png",
+        "hotel-3.png",
+        "hotel-4.png",
+        "hotel-5.png"
+      ],
       "image": "holmen-1.jpg",
       "bestseller": true,
       "breakfast": true
@@ -298,6 +347,13 @@
         "WiFi",
         "Bar"
       ],
+      "gallery": [
+        "hotel-1.png",
+        "hotel-2.png",
+        "hotel-3.png",
+        "hotel-4.png",
+        "hotel-5.png"
+      ],
       "image": "snowy-1.jpg",
       "bestseller": true,
       "breakfast": true
@@ -313,7 +369,7 @@
       "description": "Our family was traveling via bullet train between cities in  Japan with our luggage - the location for this hotel made that so   easy. Agoda price was fantastic."
     },
     {
-      "id": 1,
+      "id": 2,
       "image": "person-2.png",
       "name": "Annette Black",
       "occupation": "UX / UI Designer",
@@ -321,7 +377,7 @@
       "description": "Our family was traveling via bullet train between cities in  Japan with our luggage - the location for this hotel made that so   easy. Agoda price was fantastic."
     },
     {
-      "id": 1,
+      "id": 3,
       "image": "person-3.png",
       "name": "Annette Black",
       "occupation": "UX / UI Designer",
