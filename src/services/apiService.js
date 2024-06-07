@@ -17,6 +17,7 @@ export const getHotelById = (id) => {
     return apiClient.get(`/hotels/${id}`);
 
 };
+
 const getCountries = () => {
     return apiClient.get('/countries');
 };

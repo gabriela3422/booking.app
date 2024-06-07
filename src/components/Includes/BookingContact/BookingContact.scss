@@ -1,0 +1,29 @@
+.booking-contact__wrapper {
+  padding: 30px;
+  box-shadow: 0 10px 60px #0510360d;
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  background-color: var(--color-white);
+  margin-left: 30px;
+  position: sticky;
+  top: 0;
+  @media(max-width: 991px) {
+    margin-left: 0;
+    position: unset;
+  }
+
+  .booking-contact__info {
+    text-align: center;
+
+    h3 {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+
+  .booking-buttons {
+    .main-button {
+      margin: 15px 0;
+    }
+  }
+}

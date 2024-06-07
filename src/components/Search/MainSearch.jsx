@@ -123,7 +123,7 @@ const MainSearch = () => {
                     </div>
                     <div className="button-item">
                         <MainButton
-                            isWhite={false}
+                            isYellow={true}
                             text="Search"
                             link="/hotels"
                         />

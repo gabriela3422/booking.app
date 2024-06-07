@@ -83,9 +83,31 @@
       "id": 1,
       "city": "London",
       "address": "Westminster Borough, London",
+      "owner": {
+        "name": "John Doe",
+        "phone": "+66 123 456 789",
+        "email": "john.doe@example.com"
+      },
       "price": 99,
       "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
-      "reviews": [],
+      "questions": [
+        {
+          "question": "What do I need to hire a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "How old do I have to be to rent a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "Can I book a hire car for someone else?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "What should I look for when I'm choosing a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        }
+      ],
       "rooms": [
         {
           "name": "Standard Twin Room",
@@ -118,9 +140,31 @@
       "id": 2,
       "city": "Barcelona",
       "address": "Ciutat Vella, Barcelona",
+      "owner": {
+        "name": "John Doe",
+        "phone": "+66 123 456 789",
+        "email": "john.doe@example.com"
+      },
       "price": 85,
       "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
-      "reviews": [],
+      "questions": [
+        {
+          "question": "What do I need to hire a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "How old do I have to be to rent a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "Can I book a hire car for someone else?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "What should I look for when I'm choosing a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        }
+      ],
       "rooms": [
         {
           "name": "Standard Twin Room",
@@ -153,9 +197,31 @@
       "id": 3,
       "city": "New York",
       "address": "Manhattan, New York",
+      "owner": {
+        "name": "John Doe",
+        "phone": "+66 123 456 789",
+        "email": "john.doe@example.com"
+      },
       "price": 89,
       "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
-      "reviews": [],
+      "questions": [
+        {
+          "question": "What do I need to hire a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "How old do I have to be to rent a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "Can I book a hire car for someone else?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "What should I look for when I'm choosing a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        }
+      ],
       "rooms": [
         {
           "name": "Standard Twin Room",
@@ -188,9 +254,31 @@
       "id": 4,
       "city": "Rome",
       "address": "Vaticano Prati, Rome",
+      "owner": {
+        "name": "John Doe",
+        "phone": "+66 123 456 789",
+        "email": "john.doe@example.com"
+      },
       "price": 89,
       "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
-      "reviews": [],
+      "questions": [
+        {
+          "question": "What do I need to hire a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "How old do I have to be to rent a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "Can I book a hire car for someone else?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "What should I look for when I'm choosing a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        }
+      ],
       "rooms": [
         {
           "name": "Standard Twin Room",
@@ -223,9 +311,31 @@
       "id": 5,
       "city": "New York",
       "address": "Manhattan, New York",
+      "owner": {
+        "name": "John Doe",
+        "phone": "+66 123 456 789",
+        "email": "john.doe@example.com"
+      },
       "price": 68,
       "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
-      "reviews": [],
+      "questions": [
+        {
+          "question": "What do I need to hire a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "How old do I have to be to rent a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "Can I book a hire car for someone else?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "What should I look for when I'm choosing a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        }
+      ],
       "rooms": [
         {
           "name": "Standard Twin Room",
@@ -258,9 +368,31 @@
       "id": 6,
       "city": "Tokyo",
       "address": "Somewhere in Japan",
+      "owner": {
+        "name": "John Doe",
+        "phone": "+66 123 456 789",
+        "email": "john.doe@example.com"
+      },
       "price": 89,
       "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
-      "reviews": [],
+      "questions": [
+        {
+          "question": "What do I need to hire a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "How old do I have to be to rent a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "Can I book a hire car for someone else?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "What should I look for when I'm choosing a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        }
+      ],
       "rooms": [
         {
           "name": "Standard Twin Room",
@@ -293,9 +425,31 @@
       "id": 7,
       "city": "Paris",
       "address": "Somewhere in France",
+      "owner": {
+        "name": "John Doe",
+        "phone": "+66 123 456 789",
+        "email": "john.doe@example.com"
+      },
       "price": 89,
       "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
-      "reviews": [],
+      "questions": [
+        {
+          "question": "What do I need to hire a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "How old do I have to be to rent a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "Can I book a hire car for someone else?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "What should I look for when I'm choosing a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        }
+      ],
       "rooms": [
         {
           "name": "Standard Twin Room",
@@ -328,9 +482,31 @@
       "id": 8,
       "city": "Bangkok",
       "address": "Somewhere in Thailand",
+      "owner": {
+        "name": "John Doe",
+        "phone": "+66 123 456 789",
+        "email": "john.doe@example.com"
+      },
       "price": 75,
       "desc": "You can directly book the best price if your travel dates are available, all discounts are already included. In the following house description you will find all information about our listing.\n\n2-room terraced house on 2 levels. Comfortable and cosy furnishings: 1 room with 1 french bed and radio. Shower, sep. WC. Upper floor: (steep stair) living/dining room with 1 sofabed (110 cm, length 180 cm), TV. Exit to the balcony. Small kitchen (2 hot plates, oven,",
-      "reviews": [],
+      "questions": [
+        {
+          "question": "What do I need to hire a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "How old do I have to be to rent a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "Can I book a hire car for someone else?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        },
+        {
+          "question": "What should I look for when I'm choosing a car?",
+          "answer": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+        }
+      ],
       "rooms": [
         {
           "name": "Standard Twin Room",
