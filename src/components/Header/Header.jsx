@@ -50,8 +50,8 @@ const Header = ({ toggleSidebar }) => {
                         <div className="header-account">
                             <MainButton
                                 isWhite={true}
-                                text="Sign in"
-                                link="/"
+                                text="Hotel List"
+                                link="/hotels"
                             />
                         </div>
                     </div>

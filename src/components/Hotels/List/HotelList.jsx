@@ -1,16 +1,11 @@
 import './HotelList.scss'
-import {useBooking} from "../../../context/BookingContext";
 import {Link} from "react-router-dom";
 
-const HotelList = () => {
-    const {hotels, hotelsLoading, hotelsError} = useBooking();
-
-    if (hotelsLoading) return <div>Loading...</div>;
-    if (hotelsError) return <div>Error: {hotelsError.message}</div>;
+const HotelList = ({hotels}) => {
     return (
         <>
             {hotels && hotels.map(hotel => (
-                <div className="card flex">
+                <div className="card flex" key={hotel.id}>
                     <div className="card-image">
                         <div className="card-image__content">
                             <img src={require(`../../../assets/images/hotels/${hotel.image}`)} alt={hotel.title}/>

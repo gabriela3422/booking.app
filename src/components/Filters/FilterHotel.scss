@@ -1,0 +1,26 @@
+.hotel-filter {
+  .hotel-filter__heading {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 26.1px;
+  }
+
+  .hotel-filter__list {
+    &:not(:last-child) {
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .hotel-filter__name {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 26.1px;
+    }
+    .hotel-filter__item{
+      span{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 28.125px;
+      }
+    }
+  }
+}

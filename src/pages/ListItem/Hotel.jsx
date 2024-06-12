@@ -3,6 +3,8 @@ import './Hotels.scss'
 import HotelGallery from "../../components/Gallery/HotelGallery/HotelGallery";
 import BookingContact from "../../components/Includes/BookingContact/BookingContact";
 import FaqItem from "../../components/Includes/Faqs/FaqItem";
+import MainHeading from "../../components/Heading/MainHeading/MainHeading";
+import Hotels from "../../components/Hotels/BestSeller/Hotels";
 
 const Hotel = () => {
     const {hotel, hotelLoading, hotelError} = useBooking();
@@ -24,8 +26,8 @@ const Hotel = () => {
                             </div>
                         </div>
                         <HotelGallery hotel={hotel}/>
-                        <div className="hotel-bottom__section pt-7">
-                            <div className="flex flex-wrap">
+                        <div className="hotel-bottom__section ">
+                            <div className="flex flex-wrap pt-7">
                                 <div className="w-full lg:w-2/3">
                                     <div className="hotel-property py-5 px-3.5">
                                         <h3 className="mini-title">Property highlights</h3>
@@ -46,7 +48,7 @@ const Hotel = () => {
                             </div>
                         </div>
                         <div className="hotel-faq">
-                            <div className="hotel-faq__wrapper pt-10">
+                            <div className="hotel-faq__wrapper pt-10  pb-14">
                                 <div className="flex flex-wrap">
                                     <div className="w-full lg:w-2/5">
                                         <h3 className="mini-title">FAQs about<br/> {hotel.title} </h3>
@@ -56,6 +58,19 @@ const Hotel = () => {
                                             <FaqItem key={index} item={item}/>
                                         ))}
                                     </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="popular-hotels">
+                            <div className="popular-hotels__wrapper pt-14 pb-28">
+                                <div className="text-center">
+                                    <MainHeading
+                                        title={`Popular properties similar to ${hotel.title}`}
+                                        text="Interdum et malesuada fames ac ante ipsum"
+                                    />
+                                </div>
+                                <div className="popular-hotels__slider pt-10  flex items-center flex-wrap">
+                                    <Hotels/>
                                 </div>
                             </div>
                         </div>
