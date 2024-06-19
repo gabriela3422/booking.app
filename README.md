@@ -1,6 +1,5 @@
 # Hotel Booking App - GoTrip Booking
-![Imagine WhatsApp 2024-06-19 la 22.02.33_3c94ac1a.jpg](..%2F..%2FAppData%2FLocal%2FPackages%2F5319275A.WhatsAppDesktop_cv1g1gvanyjgm%2FTempState%2F356CE221CC12DAB65CBC2BD0723BB798%2FImagine%20WhatsApp%202024-06-19%20la%2022.02.33_3c94ac1a.jpg)
-
+![img_1.png](img_1.png)
 This Project goes over all of the fundamentals of React includig:
 
 <em>It uses a mock REST api with json-server.</em>
