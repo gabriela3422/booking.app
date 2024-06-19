@@ -7,7 +7,10 @@ const useToggle = (initialState = false) => {
         setState(prevState => !prevState);
     };
 
-    return [state, toggleState];
+    return {
+        isActive: state,
+        toggleIsActive: toggleState
+    };
 };
 
 export default useToggle;

@@ -1,6 +1,6 @@
 import React, {createContext, useContext, useEffect, useState} from 'react';
 import useFetch from "../hooks/useFetch";
-import {getHotelById, getHotels, getHotelsByQuery} from "../services/apiService";
+import {getHotelById, getHotels, getHotelsByQuery} from "../services/hotelsApi";
 
 const BookingContext = createContext();
 

@@ -37,7 +37,7 @@ const Header = ({ toggleSidebar }) => {
                         <a href="/" className="header-logo mr-5">
                             <img src={logoLight} alt="logo"/>
                         </a>
-                        <div className="header-search hidden xl:flex flew-row items-center">
+                        <div className="header-search hidden  flew-row items-center">
                             <div className="header-search__icon">
                                 <FontAwesomeIcon icon={faMagnifyingGlass}/>
                             </div>

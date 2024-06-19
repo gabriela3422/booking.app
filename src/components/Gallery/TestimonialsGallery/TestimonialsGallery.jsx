@@ -1,4 +1,3 @@
-import apiService from "../../../services/apiService";
 import useFetch from "../../../hooks/useFetch";
 import "./TestimonialsGallery.scss"
 // Import Swiper React components
@@ -8,10 +7,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import {EffectCards, Navigation, Pagination} from 'swiper/modules';
+import {getTestimonials} from "../../../services/testimonialsApi";
 
 
 const TestimonialsGallery = () => {
-    const {data: testimonials, loading, error} = useFetch(apiService.getTestimonials);
+    const {data: testimonials, loading, error} = useFetch(getTestimonials);
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error: {error.message}</div>;
     return (

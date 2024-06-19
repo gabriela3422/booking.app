@@ -1,7 +1,17 @@
-.hotel-list__page{
-  .hotel-list__length{
+.hotel-list__page {
+  @media(max-width: 991px){
+    padding-top: 25px !important;
+  }
+  .hotel-list__length {
     font-size: 18px;
     font-weight: 500;
     line-height: 33.75px;
   }
+}
+
+.filter-button {
+  background-color: #3554d10d;
+  color: var(--color-blue-1);
+  border-radius: 100px;
+  height: 40px;
 }

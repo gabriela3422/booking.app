@@ -9,12 +9,17 @@
     max-width: 250px;
     width: 100%;
     padding: 10px;
+    @media(max-width: 991px){
+      max-width: 100%;
+    }
 
     img {
       height: auto;
       width: 100%;
       display: block;
       border-radius: 4px;
+      min-height: 230px;
+      object-fit: cover;
     }
   }
 

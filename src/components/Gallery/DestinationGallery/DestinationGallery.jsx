@@ -1,15 +1,15 @@
 import {Swiper, SwiperSlide} from 'swiper/react';
 import useFetch from "../../../hooks/useFetch";
 import "./DestinationGallery.scss"
-import apiService from "../../../services/apiService";
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import {getCountries} from "../../../services/countriesApi";
 
 
 const DestinationGallery = () => {
-    const {data: countries, loading, error} = useFetch(apiService.getCountries);
+    const { data: countries, loading, error } = useFetch(getCountries);
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error: {error.message}</div>;
 

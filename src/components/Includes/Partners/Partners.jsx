@@ -1,9 +1,9 @@
 import "./Partners.scss"
-import apiService from "../../../services/apiService";
 import useFetch from "../../../hooks/useFetch";
+import {getPartners} from "../../../services/partnersApi";
 
 const Partners = () => {
-    const {data: partners, loading, error} = useFetch(apiService.getPartners);
+    const {data: partners, loading, error} = useFetch(getPartners);
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error: {error.message}</div>;
 

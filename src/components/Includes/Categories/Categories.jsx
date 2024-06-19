@@ -1,9 +1,9 @@
 import CategoryIcon from "./CategoriesIcon";
-import apiService from "../../../services/apiService";
 import useFetch from "../../../hooks/useFetch";
+import {getCategories} from "../../../services/categoriesApi";
 
 const Categories = ({hasIcon}) => {
-    const {data: categories, loading, error} = useFetch(apiService.getCategories);
+    const {data: categories, loading, error} = useFetch(getCategories);
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error: {error.message}</div>;
 

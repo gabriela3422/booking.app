@@ -1,7 +1,9 @@
 import './FilterHotel.scss';
 import {useBooking} from "../../context/BookingContext";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faClose} from "@fortawesome/free-solid-svg-icons";
 
-const FilterHotel = ({filters, onFilterChange}) => {
+const FilterHotel = ({filters, onFilterChange, className, toggleIsActive}) => {
     const {uniqueCities, priceRange, hotelsByCity} = useBooking();
 
     const handleCheckboxChange = (e) => {
@@ -21,13 +23,20 @@ const FilterHotel = ({filters, onFilterChange}) => {
     };
 
     return (
-        <div className="hotel-filter">
-            <h2 className="hotel-filter__heading mb-2.5">Filters</h2>
+        <div className={`hotel-filter ${className}`}>
+            <div className="flex lg:hidden justify-between">
+                <h2 className="hotel-filter__heading mb-2.5">Filters</h2>
+                <button
+                    className="filter-button-close px-5"
+                    onClick={toggleIsActive}>
+                    <FontAwesomeIcon icon={faClose}/>
+                </button>
+            </div>
             <div className="hotel-filter__list py-5">
                 <h3 className="hotel-filter__name mb-2.5">City</h3>
                 {uniqueCities.map((city, index) => (
-                    <div className="hotel-filter__item">
-                        <label key={index}>
+                    <div key={index} className="hotel-filter__item">
+                        <label>
                             <input
                                 type="checkbox"
                                 name="city"
@@ -44,12 +53,12 @@ const FilterHotel = ({filters, onFilterChange}) => {
             </div>
             <div className="hotel-filter__list py-5">
                 <h3 className="hotel-filter__name mb-2.5">Price</h3>
-                <div className="hotel-filter__item">
+                <div className="hotel-filter__item flex items-center">
                     <label>
-                        Min Price:
                         <input
                             type="number"
                             name="price_gte"
+                            placeholder="Min Price:"
                             value={filters.price_gte}
                             min={priceRange.min}
                             max={priceRange.max}
@@ -57,10 +66,10 @@ const FilterHotel = ({filters, onFilterChange}) => {
                         />
                     </label>
                     <label>
-                        Max Price:
                         <input
                             type="number"
                             name="price_lte"
+                            placeholder="Max Price:"
                             value={filters.price_lte}
                             min={priceRange.min}
                             max={priceRange.max}

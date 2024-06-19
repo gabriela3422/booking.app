@@ -8,6 +8,7 @@ import Hotels from "../../components/Hotels/BestSeller/Hotels";
 
 const Hotel = () => {
     const {hotel, hotelLoading, hotelError} = useBooking();
+
     if (hotelLoading) return <div>Loading...</div>;
     if (hotelError) return <div>Error: {hotelError.message}</div>;
 

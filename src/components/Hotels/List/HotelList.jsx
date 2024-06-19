@@ -5,7 +5,7 @@ const HotelList = ({hotels}) => {
     return (
         <>
             {hotels && hotels.map(hotel => (
-                <div className="card flex" key={hotel.id}>
+                <div className="card flex lg:flex-row flex-col" key={hotel.id}>
                     <div className="card-image">
                         <div className="card-image__content">
                             <img src={require(`../../../assets/images/hotels/${hotel.image}`)} alt={hotel.title}/>
@@ -22,18 +22,18 @@ const HotelList = ({hotels}) => {
                             <span>Free cancellation</span>
                             <p>You can cancel later, so lock in this great price today.</p>
                         </div>
-                        <ul className="card-amenities flex pt-5">
+                        <ul className="card-amenities flex flex-wrap pt-5">
                             {hotel.amenities.map((amenity, index) => (
                                 <li key={index}>{amenity}</li>
                             ))}
                         </ul>
                     </div>
-                    <div className="card-actions text-end">
-                        <div className="hotel-rating mt-5 flex items-center justify-end">
+                    <div className="card-actions text-start lg:text-end">
+                        <div className="hotel-rating mt-2.5 lg:mt-5 flex items-center justify-start lg:justify-end">
                             <p>Exceptional</p>
                             <span>4.7</span>
                         </div>
-                        <div className="hotel-price mt-12">
+                        <div className="hotel-price  mt-5 lg:mt-12">
                             <span>US${hotel.price}</span>
                         </div>
                         <Link className="main-button main-button-blue mt-6" key={hotel.id} to={`/hotels/${hotel.id}/`}>See

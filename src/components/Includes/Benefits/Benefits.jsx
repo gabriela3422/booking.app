@@ -1,9 +1,9 @@
-import apiService from "../../../services/apiService";
 import "./Benefits.scss"
 import useFetch from "../../../hooks/useFetch";
+import {getBenefits} from "../../../services/benefitsApi";
 
 const Benefits = () => {
-    const {data: benefits, loading, error} = useFetch(apiService.getBenefits);
+    const {data: benefits, loading, error} = useFetch(getBenefits);
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error: {error.message}</div>;
 
