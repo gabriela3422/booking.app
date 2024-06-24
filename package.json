@@ -39,7 +39,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "server": "json-server --watch db.json --port 8000",
+    "server": "json-server --watch db.json --port 3000",
     "start-server": "node server.js",
     "dev-server": "nodemon server.js",
     "vercel-build": "npm run build"
