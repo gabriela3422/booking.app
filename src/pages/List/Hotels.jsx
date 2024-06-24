@@ -3,21 +3,47 @@ import HotelList from "../../components/Hotels/List/HotelList";
 import {useBooking} from "../../context/BookingContext";
 import FilterHotel from "../../components/Filters/FilterHotel";
 import useToggle from "../../hooks/useToogle";
+import {useLocation, useNavigate} from "react-router";
+import {useEffect} from "react";
 
 const Hotels = () => {
     const {hotelsLoading, hotelsError, filters, setFilters, filteredHotels} = useBooking();
     const { isActive, toggleIsActive } = useToggle(false);
 
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    useEffect(() => {
+        const params = new URLSearchParams(location.search);
+        const city = params.getAll('city');
+        const price_gte = params.get('price_gte');
+        const price_lte = params.get('price_lte');
+        setFilters({
+            city: city.length ? city : [],
+            price_gte: price_gte || '',
+            price_lte: price_lte || '',
+        });
+    }, [location.search, setFilters]);
+
+    useEffect(() => {
+        console.log('Filters updated:', filters);
+    }, [filters]);
+
     if (hotelsLoading) return <div>Loading...</div>;
     if (hotelsError) return <div>Error: {hotelsError.message}</div>;
 
-
     const handleFilterChange = (name, value) => {
-        setFilters((prevFilters) => ({
-            ...prevFilters,
-            [name]: value,
-        }));
+        const newFilters = { ...filters, [name]: value };
+        setFilters(newFilters);
+        const queryParams = new URLSearchParams();
+        if (newFilters.city.length) {
+            newFilters.city.forEach(city => queryParams.append('city', city));
+        }
+        if (newFilters.price_gte) queryParams.set('price_gte', newFilters.price_gte);
+        if (newFilters.price_lte) queryParams.set('price_lte', newFilters.price_lte);
+        navigate({ search: queryParams.toString() });
     };
+
     const handleFilterButtonClick = () =>{
         toggleIsActive();
     }

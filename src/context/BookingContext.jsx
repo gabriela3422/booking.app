@@ -10,7 +10,7 @@ export const BookingProvider = ({children, params}) => {
     const [hotelId, setHotelId] = useState(params.id || 1);
     const {data: hotels, loading: hotelsLoading, error: hotelsError} = useFetch(getHotels);
     const {data: hotel, loading: hotelLoading, error: hotelError} = useFetch(getHotelById, hotelId);
-    const {data: filteredHotels, loading: filteredHotelsLoading, error: filteredHotelsError} = useFetch(getHotelsByQuery, filters);
+    const [filteredHotels, setFilteredHotels] = useState([]);
 
     const [uniqueCities, setUniqueCities] = useState([]);
     const [priceRange, setPriceRange] = useState({ min: 0, max: 0 });
@@ -33,7 +33,10 @@ export const BookingProvider = ({children, params}) => {
                 return acc;
             }, {});
             setHotelsByCity(cityCounts);
+            setFilteredHotels(hotels);
+
         }
+
     }, [hotels]);
 
 
@@ -43,11 +46,31 @@ export const BookingProvider = ({children, params}) => {
         }
     }, [params.id]);
 
+    useEffect(() => {
+        if (!filters.city.length && !filters.price_gte && !filters.price_lte) {
+            setFilteredHotels(hotels);
+        } else {
+            console.log('Fetching with filters:', filters);
+            getHotelsByQuery(filters).then(response => {
+                console.log('Filtered hotels:', response.data);
+                setFilteredHotels(response.data);
+            }).catch(error => {
+                console.error('Error fetching filtered hotels:', error);
+            });
+        }
+    }, [filters, hotels]);
     return (
         <BookingContext.Provider value={{
-            hotels, hotelsLoading, hotelsError,
-            hotel, hotelLoading, hotelError, filteredHotelsLoading, filteredHotelsError,
-            setHotelId, filters, setFilters, filteredHotels,
+            hotels,
+            hotelsLoading,
+            hotelsError,
+            hotel,
+            hotelLoading,
+            hotelError,
+            setHotelId,
+            filters,
+            setFilters,
+            filteredHotels,
             uniqueCities, priceRange, hotelsByCity
         }}>
             {children}

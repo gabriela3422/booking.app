@@ -5,8 +5,16 @@ export const getHotels = () => {
 };
 
 export const getHotelsByQuery = (filters = {}) => {
-    const query = new URLSearchParams(filters).toString();
-    return apiClient.get(`/hotels?${query}`);
+    const query = new URLSearchParams();
+    for (const key in filters) {
+        if (Array.isArray(filters[key])) {
+            filters[key].forEach(value => query.append(key, value));
+        } else if (filters[key]) {
+            query.append(key, filters[key]);
+        }
+    }
+    const queryString = query.toString();
+    return apiClient.get(`/hotels?${queryString }`);
 };
 
 export const getHotelById = (id) => {
